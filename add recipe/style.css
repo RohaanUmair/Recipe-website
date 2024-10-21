@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f065;
+    font-family: Arial, sans-serif;
+}
+
+
+.box{
+    margin-top: 3dvh;
+    display: flex;
+    width: 94%;
+    height: 90dvh;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    position: relative;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: #333;
+}
+
+form label{
+    width: 100%;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 17px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#recipe_img{
+    width: 30%;
+}
+#recipe_title{
+    width: 30%;
+}
+
+textarea{
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+#recipe_procedure{
+    height: 100px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsla(39, 100%, 50%, 0.863);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    outline: none;
+}
+
+ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+#home_btn{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#profile_pic{
+    border: 3px solid orange;
+    border-radius: 50%;
+    padding: 1px;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+@media (max-width: 480px) {
+    #profile_pic{
+        display: none;
+    }
+
+    form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        font-size: 16px;
+        transition: border-color 0.3s;
+    }
+
+    #recipe_img{
+        width: 70%;
+    }
+    #recipe_title{
+        width: 70%;
+    }
+}
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <!-- <ul>
+                <li><a id="add_recipe_btn" href="../add recipe/index.html">Add a Recipe</a></li>
+                <li id="home_btn"><i class="fa-solid fa-house"></i></li>
+                <li><a href="#"><img id="profile_pic" src="../utils/blank pic.png"></a></li>
+            </ul> -->
+            
+            <img src="../utils/logo.png" id="logo_mobile" alt="">
+
+            <div class="div1">
+                <ul>
+                    <img id="logo2" src="../utils/logo.png" alt="Logo">
+                    <li><a id="add_recipe_btn" href="../add recipe/index.html">Add a Recipe</a></li>
+                </ul>
+            </div>
+
+            <div class="div2">
+                <ul>
+                    <li id="home_btn">Home</li>
+                    <li id="my_recipe_btn">My Recipes</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            
+            <div class="div3">
+                <button id="logout_btn">LOGOUT</button>
+            </div>
+
+            
+            <div class="menu">
+                <h2>Home</h2>
+                <span></span>
+                <h2>My Recipes</h2>
+                <span></span>
+                <h2>Add Recipe</h2>
+                <span></span>
+                <h2>Logout</h2>
+            </div>
+            
+            <i class="fa-solid fa-bars" id="menu_btn"></i>
+        </nav>
+    </header>
+
+    <div class="heading">
+        <h1>My Recipes</h1>
+        <img id="profile_pic" class="a" src="utils/blank pic.png">
+    </div>
+
+    <div class="main">
+        <div class="recipe-overview"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <form id="add_recipe_form">
+            <h1>Add Recipe</h1>
+
+            <label for="recipe_img">Image</label>
+            <input type="file" id="recipe_img" accept="image/*" required>
+
+            <label for="recipe_title">Title</label>
+            <input type="text" id="recipe_title" required>
+
+            <label for="recipe_ingredients">Ingredients</label>
+            <textarea id="recipe_ingredients"></textarea>
+
+            <label for="recipe_procedure">Procedure</label>
+            <textarea id="recipe_procedure"></textarea>
+
+            <button type="submit" value="submit" id="add_recipe_btn">Upload Recipe</button>
+
+            <ul>
+                <li id="home_btn"><i class="fa-solid fa-house"></i></li>
+                <li><a href="#"><img id="profile_pic" src="../utils/blank pic.png" alt="Profile"></a></li>
+            </ul>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
