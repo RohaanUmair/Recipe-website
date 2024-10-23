@@ -84,6 +84,7 @@ nav ul li a {
   list-style: none;
   text-decoration: none;
   color: #555;
+  cursor: pointer;
 }
 
 .div2 ul li{
