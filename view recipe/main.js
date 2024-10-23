@@ -51,6 +51,10 @@ home_btn.addEventListener('click', (() => {
     window.location.pathname = '../index.html';
 }));
 
+my_recipe_btn.addEventListener('click', (() => {
+    window.location.pathname = '../my profile/index.html';
+}))
+
 
 async function getProfilePic(uid) {
     const q = query(collection(db, "userInfo"), where("uid", "==", uid));
